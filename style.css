@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling for all button start */
+.header-section-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(245, 105, 4);
+  font-size: 12px;
+}
+/* styling for all button end */
+
+/* styling for all hr line start */
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 0.5em 0 0.5em 0;
+  background-color: rgba(138, 136, 136, 0.216);
+}
+/* styling for all hr line end */
+
+body {
+  background-color: rgb(187, 185, 185);
+  font-size: 16px;
+  max-width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.301);
+  background-color: rgba(255, 255, 255, 60%);
+  text-shadow: 0 1px 0px black;
+}
+
+/* display color section start */
+
+.section {
+  width: 100%;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#save-btn {
+  margin-right: 1rem;
+}
+
+.header-title {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.display-color {
+  width: 100%;
+  height: 6rem;
+  margin: 1rem 0 2rem 0;
+  border-radius: 10px;
+  border: 1px solid rgba(166, 164, 164, 0.435);
+  background-color: white;
+}
+
+/* display color section end */
+
+/* change & copy color start */
+
+/* select color mode start */
+
+.select-color-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 0 1.1rem 0;
+}
+
+.mode-radio-group {
+  display: flex;
+}
+
+label {
+  font-size: 15px;
+  text-shadow: none;
+  user-select: none;
+}
+
+.hex {
+  margin-right: 1rem;
+}
+
+/* select color mode end */
+
+/* selected color code start */
+
+.selected-copy-mode {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-shadow: none;
+}
+
+.selected-lead {
+  font-size: 13px;
+}
+
+.input-selected-color {
+  margin-top: 0.3rem;
+  width: 100%;
+  padding: 0.3rem;
+  outline: none;
+}
+
+.input-selected-color:focus {
+  border-color: rgb(237, 107, 7);
+}
+
+#input-hex {
+  width: 94%;
+  padding-left: 1rem;
+}
+
+.hex-input-group {
+  position: relative;
+}
+
+.hex-icon {
+  position: absolute;
+  left: 1px;
+  top: 45%;
+  text-shadow: none;
+  font-size: 13px;
+  color: rgb(116, 116, 116);
+  padding: 0.4rem 0rem 0rem 0.5rem;
+}
+
+/* selected color code end */
+
+/* color slider group start */
+
+.color-slider-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.slider-label-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  text-shadow: none;
+}
+
+.color-slider p {
+  margin-top: 1.7em;
+}
+
+/* color slider group end */
+
+/* change & copy color end */
+
+/* preset section start */
+.preset-title {
+  margin-top: 1rem;
+}
+
+.preset-colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0 auto;
+  gap: 0.2rem;
+  padding: 1rem 0;
+}
+
+.preset {
+  width: 75px;
+  height: 30px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px 0 gray;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+/* preset section end */
+
+/* image preference section start */
+.preference-container {
+  margin-top: 1.5rem;
+}
+
+.background-preference {
+  display: flex;
+  justify-content: space-between;
+}
+
+.background-preference p {
+  font-size: 15px;
+  margin-top: 0.5rem;
+}
+
+.image-preview {
+  width: 220px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0.7rem 0 0.7rem 0;
+  background-color: #a7a7a7;
+}
+
+#upload-file-input {
+  display: none;
+}
+
+.background-preference-btn {
+  background-color: #a7a7a7;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid gray;
+  transition: all 0.2s ease-in-out;
+}
+
+.background-preference-btn:hover {
+  background-color: #6f6f6f;
+  color: white;
+}
+
+.background-right-panel {
+  margin: 2rem 1.7rem;
+}
+
+.select-group {
+  margin-bottom: 0.5rem;
+}
+
+.select-group select {
+  width: 100%;
+  height: 25px;
+  border: 1px solid #a7a7a7;
+  margin-top: 0.3rem;
+  outline: none;
+}
+
+.select-group select:focus {
+  border-color: rgb(233, 126, 3);
+}
+/* image preference section end */
+
+/* Global style for the success or failed message */
+
+.toastMesssage {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgba(147, 234, 191, 0.884);
+  border-left: 10px solid rgb(26, 154, 88);
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+.animation-in {
+  animation: animation-in 0.4s ease-in;
+}
+
+@keyframes animation-in {
+  from {
+    transform: translateX(200px);
+    z-index: 0;
+  }
+  to {
+    transform: translateX(0px);
+    z-index: 1;
+  }
+}

@@ -1,0 +1,116 @@
+@media screen and (max-width: 360px) {
+  .header-section-button {
+    font-size: 11px;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+
+  body {
+    background-color: rgb(187, 185, 185);
+    width: 100%;
+    height: auto;
+  }
+
+  #save-btn {
+    margin-right: 0.5rem;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0rem auto;
+  }
+
+  .header-title {
+    font-size: 0.9rem;
+  }
+
+  .display-color {
+    height: 4rem;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .selected-lead {
+    font-size: 0.8rem;
+  }
+
+  .selected-lead {
+    font-size: 12px;
+  }
+
+  #input-hex {
+    width: 94%;
+    padding-left: 1rem;
+  }
+
+  .color-slider-group {
+    margin: 0 auto;
+  }
+
+  .slider-label-group {
+    font-size: 11px;
+  }
+
+  .color-slider p {
+    margin-top: 1.5rem;
+  }
+
+  .range-color input {
+    width: 100%;
+  }
+
+  .preset-colors {
+    gap: 0.3rem;
+    padding: 0rem 0.1rem;
+  }
+
+  .preset {
+    width: 50px;
+    height: 20px;
+  }
+
+  .background-preference p {
+    font-size: 13px;
+  }
+
+  .image-preview {
+    width: 130px;
+    height: 90px;
+  }
+
+  .background-preference-btn {
+    background-color: #a7a7a7;
+    padding: 0.2rem;
+    font-size: 11px;
+  }
+
+  .background-right-panel {
+    margin: 1.5rem 0.4rem;
+  }
+
+  .select-group label {
+    font-size: 11px;
+  }
+
+  .select-group select {
+    font-size: 11px;
+    height: 20px;
+    margin-top: 0.1rem;
+  }
+
+  .select-group option {
+    font-size: 11px;
+  }
+
+  .toastMesssage {
+    top: 0.3rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-left: 5px solid rgb(26, 154, 88);
+  }
+}

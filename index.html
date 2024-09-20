@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEX color generator with HEX code</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- display section start -->
+      <section class="section">
+        <div class="header-section">
+          <h3 class="header-title">Display Color</h3>
+
+          <button class="header-section-button" id="random-color">
+            Random Color
+          </button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="display-color" id="display-color"></div>
+      </section>
+      <!-- display section end -->
+
+      <!-- Change & Copy color start -->
+      <section class="section">
+        <section class="header-section">
+          <h3 class="header-title">Change & Copy Color</h3>
+
+          <div>
+            <button class="header-section-button" id="save-btn">Save</button>
+            <button class="header-section-button" id="copy-to-clipboard">
+              Copy
+            </button>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <div class="select-color-mode">
+          <p class="lead">Select Color Mode</p>
+
+          <div class="mode-radio-group">
+            <div class="mode-input-group">
+              <input
+                type="radio"
+                name="color-mode"
+                value="hex"
+                id="color-mode-hex"
+                checked />
+              <label for="color-mode-hex" class="hex">HEX</label>
+            </div>
+
+            <div class="mode-input-group">
+              <input
+                type="radio"
+                name="color-mode"
+                value="rgb"
+                id="color-mode-rgb" />
+              <label for="color-mode-rgb">RGB</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="selected-copy-mode">
+          <div class="hex-input-group">
+            <label for="input-hex" class="lead selected-lead">HEX</label><br />
+            <input
+              type="text"
+              placeholder="DDDEEE"
+              id="input-hex"
+              class="input-selected-color" />
+            <div class="hex-icon">#</div>
+          </div>
+
+          <div class="rgb-input-group">
+            <label for="input-rgb" class="lead selected-lead">RGB</label><br />
+            <input
+              type="text"
+              placeholder="rgb(221, 222, 238)"
+              id="input-rgb"
+              disabled
+              class="input-selected-color" />
+          </div>
+        </div>
+
+        <div class="color-slider">
+          <p class="lead">Adjust RGB Colors</p>
+
+          <div class="color-slider-group">
+            <div class="range-color">
+              <div class="slider-label-group">
+                <p>Red</p>
+                <p id="color-slider-red-label">221</p>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                id="color-slider-red"
+                class="color-slider color-slider-red" />
+            </div>
+
+            <div class="range-color">
+              <div class="slider-label-group">
+                <p>Green</p>
+                <p id="color-slider-green-label">200</p>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                id="color-slider-green"
+                class="color-slider color-slider-green" />
+            </div>
+
+            <div class="range-color">
+              <div class="slider-label-group">
+                <p>Blue</p>
+                <p id="color-slider-blue-label">250</p>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="255"
+                id="color-slider-blue"
+                class="color-slider color-slider-blue" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Change & Copy color end -->
+
+      <!-- preset section start -->
+      <section class="section">
+        <div class="header-section">
+          <h3 class="header-title preset-title">Preset Colors</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="preset-colors" id="preset-colors"></div>
+      </section>
+      <!-- preset section end -->
+
+      <!-- save custom color section start -->
+      <section class="section">
+        <div class="header-section">
+          <h3 class="header-title preset-title">Saved Colors</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="preset-colors" id="custom-colors"></div>
+      </section>
+      <!-- save custom color section end -->
+
+      <!-- add and change background image section start -->
+      <section class="section preference-container">
+        <div class="header-section">
+          <h3 class="header-title">Background Preference</h3>
+        </div>
+        <div class="divider"></div>
+
+        <div class="background-preference">
+          <div class="background-left-panel">
+            <p class="lead">Image Preview</p>
+
+            <div class="image-preview" id="bg-preview"></div>
+
+            <input type="file" id="upload-file-input" />
+            <button id="upload-file-button" class="background-preference-btn">
+              Upload Image
+            </button>
+            <button id="delete-btn" class="background-preference-btn">
+              Delete
+            </button>
+          </div>
+
+          <div class="background-right-panel">
+            <div id="bg-controller">
+              <div class="select-group">
+                <label>Background Size</label>
+                <select name="bg-size" id="bg-size">
+                  <option value="auto">Auto</option>
+                  <option value="inherit">Inherit</option>
+                  <option value="contain">Contain</option>
+                  <option value="cover">Cover</option>
+                </select>
+              </div>
+
+              <div class="select-group">
+                <label>Background Repeat</label>
+                <select name="bg-repeat" id="bg-repeat">
+                  <option value="Repeat">Repeat</option>
+                  <option value="No-repeat">No-repeat</option>
+                </select>
+              </div>
+
+              <div class="select-group">
+                <label>Background Position</label>
+                <select name="bg-position" id="bg-position">
+                  <option value="top">Top</option>
+                  <option value="bottom">Bottom</option>
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
+                  <option value="center">Center</option>
+                  <option value="inherit">Inherit</option>
+                </select>
+              </div>
+
+              <div class="select-group">
+                <label>Background Attachment</label>
+                <select name="bg-Attachment" id="bg-attachment">
+                  <option value="fixed">Fixed</option>
+                  <option value="local">Local</option>
+                  <option value="scroll">Scroll</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- add and change background image section end -->
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
